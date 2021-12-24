@@ -29,35 +29,23 @@
         <div class="choose">
           <h1>Choose your Metaverse</h1>
           <div class="top__main">
-        <?php
-          $result = [
-            [
-              'title' => 'Fantasy',
-              'img' => 'tmc1',
-              'location' => 'metaverse/fantasy'
-            ],
-            [
-              'title' => 'Blockman',
-              'img' => 'tmc2',
-              'location' => 'metaverse/blockman'
-            ],
-            [
-              'title' => 'Party',
-              'img' => 'tmc3',
-              'location' => 'metaverse/party'
-            ]
-          ];
-
-          foreach ($result as $key => $value) {
-            echo '<div class="tmc__container">';
-            echo '<div class="tm__content '.$value['img'].'" onclick="location.href=`'.$value['location'].'.php`">';
-            echo '<h1>'.$value['title'].'</h1>';
-            echo '</div>';
-            echo '</div>';
-          }
-        ?>
+            <div class="tmc__container">
+                <div class="tm__content tmc1" onclick="location.href='metaverse/fantasy.php'">
+                  <h1>Fantasy</h1>
+                </div>
+              </div>
+              <div class="tmc__container">
+                <div class="tm__content tmc2" onclick="location.href='/metaverse/blockman.php'">
+                  <h1>Blockman</h1>
+                </div>
+              </div>
+              <div class="tmc__container">
+                <div class="tm__content tmc3" onclick="location.href='/metaverse/party.php'">
+                  <h1>Party</h1>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
       </div>
     </main>
 

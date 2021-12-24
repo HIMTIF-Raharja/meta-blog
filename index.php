@@ -30,17 +30,17 @@
           <h1>Choose your Metaverse</h1>
           <div class="top__main">
             <div class="tmc__container">
-              <div class="tm__content tmc1" onclick="location.href='fantasy.php';">
+              <div class="tm__content tmc1" onclick="location.href='metaverse/fantasy.php'">
                 <h1>Fantasy</h1>
               </div>
             </div>
             <div class="tmc__container">
-              <div class="tm__content tmc2" onclick="location.href='/metaverse/blockman'">
+              <div class="tm__content tmc2" onclick="location.href='/metaverse/blockman.php'">
                 <h1>Blockman</h1>
               </div>
             </div>
             <div class="tmc__container">
-              <div class="tm__content tmc3" onclick="location.href='/metaverse/party'">
+              <div class="tm__content tmc3" onclick="location.href='/metaverse/party.php'">
                 <h1>Party</h1>
               </div>
             </div>

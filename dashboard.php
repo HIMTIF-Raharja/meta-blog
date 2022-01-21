@@ -53,17 +53,16 @@
 
     <?php
         if(isset($_POST['submit'])){
-        $title = $_POST['title'];
-        $image = $_POST['image'];
-        $location = $_POST['location'];
-            
-        include("config.php");
+          $title = $_POST['title'];
+          $image = $_POST['image'];
+          $location = $_POST['location'];
+              
+          include("config.php");
 
-        $result = mysqli_query($mysqli, "INSERT INTO heroes_tb(name,type_id,photo) VALUES('$title',$image,'$location')");
-            
-        $result = pg_query($query_sql);
-        echo "<p class='text-center'>Siswa Added Successfully.</p> <a href='../index.php' class='text-center'>View Siswa</a>";
-        
+          $result = mysqli_query($mysqli, "INSERT INTO heroes_tb(name,type_id,photo) VALUES('$title',$image,'$location')");
+              
+          $result = pg_query($query_sql);
+          echo "<p class='text-center'>New Metaverse Added Successfully.</p> <a href='../index.php' class='text-center'>View Siswa</a>";
         }
     ?>
 </body>

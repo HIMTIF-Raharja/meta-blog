@@ -45,7 +45,7 @@
               'title' => 'Party',
               'img' => 'tmc3',
               'location' => 'metaverse/party'
-            ]
+            ],
           ];
 
           foreach ($result as $key => $value) {

@@ -10,6 +10,6 @@ $id = $_GET['id'];
 $result = mysqli_query($mysqli, "DELETE FROM metaverse WHERE id=$id");
 
 //After delet redirect to home
-header("Location:dashboard/index.php");
+header("Location:index.php");
 
 ?>

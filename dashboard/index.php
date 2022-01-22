@@ -37,7 +37,7 @@
 
                 while($row = mysqli_fetch_array($result)){
                 $id = $row['id'];
-                
+
                 echo '<div class="col-sm-6">';
                 echo '<div class="card mb-2">';
                 echo '<div class="card-body">';
@@ -45,8 +45,8 @@
                 echo '<img src="./img/'.$row['image'].'.jpg" height="50"></img>';
                 echo '<p class="text-dark">Image: '.$row['image'].'</p>';
                 echo '<p class="card-text text-dark">Location: '.$row['location'].'</p>';
-                echo '<a href="update.php" class="btn btn-primary">Update</a>';
-                echo '<a href="delete.php" class="btn btn-warning mx-2">delete</a>';
+                echo '<a href="update.php?id= '.$id.'" class="btn btn-primary" name="update">Update</a>';
+                echo '<a href="delete.php?id= '.$id.'" class="btn btn-warning mx-2" name="delete">delete</a>';
                 echo '<input type="hidden" name="id" value="'.$row['id'].'">';
                 echo '</div>';
                 echo '</div>';
@@ -55,5 +55,8 @@
             ?>
         </div>
     </main>
+    <?php
+
+    ?>
 </body>
 </html>

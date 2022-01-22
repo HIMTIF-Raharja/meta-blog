@@ -57,13 +57,13 @@
           $image = $_POST['image'];
           $location = $_POST['location'];
               
-          include("config.php");
+          include("../config.php");
 
           $result = mysqli_query($mysqli, "INSERT INTO metaverse(title,image,location) VALUES('$title','$image','$location')");
 
           if($result){
             echo "<script>alert('Successfully Added!')</script>";
-            echo "<script>window.open('dashboard.php','_self')</script>";
+            header("Location:index.php");
           }
           // echo "<p class='text-center'>New Metaverse Added Successfully.</p> <a href='../index.php' class='text-center'>View Siswa</a>";
         }

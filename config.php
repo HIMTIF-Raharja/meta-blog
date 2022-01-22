@@ -6,9 +6,9 @@
 
     $mysqli = mysqli_connect($databaseHost, $databaseUsername, $databasePassword, $databaseName);
 
-    if(isset($mysqli)) {
-        echo "Koneksi Berhasil";
-    } else {
-        echo "Koneksi Gagal";
-    }
+    // if(isset($mysqli)) {
+    //     echo "Koneksi Berhasil";
+    // } else {
+    //     echo "Koneksi Gagal";
+    // }
 ?>

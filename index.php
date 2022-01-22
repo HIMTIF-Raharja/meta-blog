@@ -21,10 +21,10 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link active" aria-current="page" href="index.php">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="dashboard.php">Dashboard</a>
+              <a class="nav-link" href="dashboard/index.php">Dashboard</a>
             </li>
           </ul>
         </div>
@@ -47,33 +47,37 @@
         <div class="choose">
           <h1>Choose your Metaverse</h1>
           <div class="top__main">
-        <?php
-          $result = [
-            [
-              'title' => 'Fantasy',
-              'img' => 'tmc1',
-              'location' => 'metaverse/fantasy'
-            ],
-            [
-              'title' => 'Blockman',
-              'img' => 'tmc2',
-              'location' => 'metaverse/blockman'
-            ],
-            [
-              'title' => 'Party',
-              'img' => 'tmc3',
-              'location' => 'metaverse/party'
-            ],
-          ];
+          <?php
+            // $result_dummy = [
+            //   [
+            //     'title' => 'Fantasy',
+            //     'img' => 'tmc1',
+            //     'location' => 'metaverse/fantasy'
+            //   ],
+            //   [
+            //     'title' => 'Blockman',
+            //     'img' => 'tmc2',
+            //     'location' => 'metaverse/blockman'
+            //   ],
+            //   [
+            //     'title' => 'Party',
+            //     'img' => 'tmc3',
+            //     'location' => 'metaverse/party'
+            //   ],
+            // ];
+            include 'config.php';
 
-          foreach ($result as $key => $value) {
-            echo '<div class="tmc__container">';
-            echo '<div class="tm__content '.$value['img'].'" onclick="location.href=`'.$value['location'].'.php`">';
-            echo '<h1>'.$value['title'].'</h1>';
-            echo '</div>';
-            echo '</div>';
-          }
-        ?>
+            $result = mysqli_query($mysqli, "SELECT * FROM metaverse");
+
+            while($row = mysqli_fetch_array($result)){
+
+              echo '<div class="tmc__container">';
+              echo '<div class="tm__content '.$row['image'].'" onclick="location.href=`'.$row['location'].'.php`">';
+              echo '<h1>'.$row['title'].'</h1>';
+              echo '</div>';
+              echo '</div>';
+            }
+          ?>
           </div>
         </div>
       </div>

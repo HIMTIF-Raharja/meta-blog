@@ -47,6 +47,7 @@
         <div class="choose">
           <h1>Choose your Metaverse</h1>
           <div class="top__main">
+
           <?php
             // $result_dummy = [
             //   [
@@ -78,8 +79,8 @@
               echo '</div>';
             }
           ?>
+
           </div>
-        </div>
       </div>
     </main>
 

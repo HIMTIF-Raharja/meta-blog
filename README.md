@@ -1,3 +1,2 @@
 # meta-clone
-Mengajar murid BELATI (Belajar Teknik Informatika)
-- membuat meta clone CRUD application with php & mysql
+Mengajar murid BELATI (Belajar Teknik Informatika), Built meta clone CRUD application with PHP & MySQL
